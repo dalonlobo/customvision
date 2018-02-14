@@ -40,6 +40,8 @@ if __name__ == "__main__":
         dest_path: Path to save the files
     :output:
         Saves the images in their respective categories folder
+    :run:
+        python classification_algo.py --conf_file config.json --src_folder input --dest_folder output
     """
     logs_path = os.path.basename(__file__) + ".logs"
     logging.basicConfig(filename=logs_path,
@@ -62,8 +64,11 @@ if __name__ == "__main__":
         args = parser.parse_args()
     
         logger.info("#########################")
-        logger.info(".....Exiting program.....")
+        logger.info(".....Starting program....")
         logger.info("#########################")
+        print("#########################", file=sys.stderr)
+        print(".....Starting program....", file=sys.stderr)
+        print("#########################", file=sys.stderr)
         if not os.path.exists(args.dest_folder):
             logger.debug("Creating the destination folder")
             os.mkdir(args.dest_folder)
