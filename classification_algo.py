@@ -14,8 +14,7 @@ import logging
 import glob
 import shutil
 import json
-
-# Install it using:
+# Install azure package using:
 # pip install "git+https://github.com/Azure/azure-sdk-for-python#egg=azure-cognitiveservices-vision-customvision&subdirectory=azure-cognitiveservices-vision-customvision"
 # If you encounter a Filename too long error, make sure you have long path support in git enabled.
 # git config --system core.longpaths true
